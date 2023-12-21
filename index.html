@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Alarm Web App</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    /> 
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+	<link rel="shortcut icon" href="assets/fav.png"  type="image/x-icon">
+  </head>
+  <body>
+	<h3 style='text-align:center';> Alarm Clock </h3>
+    <div class="wrapper">
+      <div class="clock-display">00:00:00</div>
+      <div class="container">
+        <div class="input-fields">
+          <input type="number" id="hourField" placeholder=" " min="0" max="23" />
+          <input type="number" id="minuteField" placeholder=" " min="0"  max="59" />
+		  <input type="number" id="secondField" placeholder=" " min="0"  max="59" />
+		  
+        </div>
+        <button id="addAlarmButton">Add Alarm</button>
+        <div class="alarmList"></div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
